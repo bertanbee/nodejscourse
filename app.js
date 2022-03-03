@@ -14,6 +14,8 @@ const reviewRouter = require('./routes/reviewRoutes');
 
 const app = express();
 
+app.set('view engine', 'pug');
+
 app.use(helmet());
 
 // 1) MIDDLEWARES
