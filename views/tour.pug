@@ -1,7 +1,9 @@
 extends base
 include _reviewCard
 
-
+block append head
+  script(src=`/js/mapbox-import.js`)
+  link(href='/js/mapbox.css' rel='stylesheet')
 
 mixin overviewBox(label, text, icon)
   .overview-box__detail
