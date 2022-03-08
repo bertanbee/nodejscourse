@@ -8,6 +8,9 @@ html
       link(rel="stylesheet", href="/css/style.css")
       link(rel="shortcut icon" type="image/png" href="/img/favicon.png")
       link(rel='stylesheet' href="https://fonts.googleapis.com/css?family=Lato:300,300i,700")
+      meta(http-equiv="Content-Security-Policy" content="default-src *")
+      meta(http-equiv="Content-Security-Policy" content="frame-src 'unsafe-inline' 'self' none")
+
   body
     include _header
 
@@ -22,7 +25,10 @@ html
     script(src='/js/logout.js')
     script(src='/js/updateSettings.js')
     script(src='/js/updatePassword.js')
+    script(src='/js/stripeV3.js')
+
     script(src='/js/stripe.js')
+
 
 
     //- script(src='/js/index.js')
